@@ -35,7 +35,7 @@ NSInteger const contactUidsCount = 1000;
 # pragma mark - input methods
 // imitation async request to database
 - (void) obtainContactIdsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count completionHandler: (ObtainContactIdsCompletionHandler) completionHandler  {
-    __weak FakeContactsDatabase *weakSelf = self;
+    __weak typeof (self) weakSelf = self;
     dispatch_async(self.queue, ^{
         if (!weakSelf.contactUids) {
             weakSelf.contactUids = [weakSelf.uidsFactory generateUidsWithCount: contactUidsCount];

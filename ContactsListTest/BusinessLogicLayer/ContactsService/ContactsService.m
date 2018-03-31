@@ -32,7 +32,7 @@ typedef void (^ObtainContactCompletionHandler) (Contact* contacts);
 
 # pragma mark - input methods
 - (void) obtainContactsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count completionHandler: (ObtainContactsCompletionHandler) completionHandler {
-    __weak ContactsService *weakSelf = self;
+    __weak typeof (self) weakSelf = self;
     [self.contactsDatabase obtainContactIdsWithOffset: offset
                                         contactsCount: count
                                     completionHandler:^(NSArray<NSString *> *uids) {
