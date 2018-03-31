@@ -17,6 +17,7 @@
 		53FB499F206F9DAF002549F0 /* Names.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB499E206F9DAF002549F0 /* Names.m */; };
 		53FB49A2206FBAF9002549F0 /* ContactsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49A1206FBAF9002549F0 /* ContactsService.m */; };
 		53FB49A5206FBBD2002549F0 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49A4206FBBD2002549F0 /* Contact.m */; };
+		53FB49A8206FC59C002549F0 /* ContactUidsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		53FB49A1206FBAF9002549F0 /* ContactsService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsService.m; sourceTree = "<group>"; };
 		53FB49A3206FBBD2002549F0 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		53FB49A4206FBBD2002549F0 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		53FB49A6206FC59C002549F0 /* ContactUidsFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactUidsFactory.h; sourceTree = "<group>"; };
+		53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactUidsFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 		53FB4994206F9853002549F0 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				53FB49A6206FC59C002549F0 /* ContactUidsFactory.h */,
+				53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				53FB499F206F9DAF002549F0 /* Names.m in Sources */,
 				53FB49A5206FBBD2002549F0 /* Contact.m in Sources */,
 				53FB496E206F95E7002549F0 /* main.m in Sources */,
+				53FB49A8206FC59C002549F0 /* ContactUidsFactory.m in Sources */,
 				53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
