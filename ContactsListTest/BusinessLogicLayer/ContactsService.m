@@ -10,4 +10,8 @@
 
 @implementation ContactsService
 
+- (void) obtainContactsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count completionHandler: (ObtainContactsCompletionHandler) completionHandler; {
+    
+}
+
 @end

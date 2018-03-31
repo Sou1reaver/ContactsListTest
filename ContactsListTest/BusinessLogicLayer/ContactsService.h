@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Contact.h"
+
+
+typedef void (^ObtainContactsCompletionHandler) (Contact* contacts);
 
 @interface ContactsService : NSObject
-
+- (void) obtainContactsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count completionHandler: (ObtainContactsCompletionHandler) completionHandler;
 @end
