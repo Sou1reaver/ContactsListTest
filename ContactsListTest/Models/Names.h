@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  Names.h
 //  ContactsListTest
 //
 //  Created by Владимир Гордиенко on 31.03.2018.
 //  Copyright © 2018 Vladimir Gordienko. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
-
+@interface Names : NSObject
+@property (strong, nonatomic) NSArray<NSString *> *list;
 @end
-

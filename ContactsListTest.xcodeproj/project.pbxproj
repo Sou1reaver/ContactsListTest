@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB495F206F95E6002549F0 /* AppDelegate.m */; };
-		53FB4963206F95E6002549F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4962206F95E6002549F0 /* ViewController.m */; };
 		53FB4966206F95E6002549F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4964206F95E6002549F0 /* Main.storyboard */; };
 		53FB4968206F95E7002549F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4967206F95E7002549F0 /* Assets.xcassets */; };
 		53FB496B206F95E7002549F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4969206F95E7002549F0 /* LaunchScreen.storyboard */; };
 		53FB496E206F95E7002549F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB496D206F95E7002549F0 /* main.m */; };
 		53FB4978206F95E7002549F0 /* ContactsListTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4977206F95E7002549F0 /* ContactsListTestTests.m */; };
 		53FB4983206F95E7002549F0 /* ContactsListTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4982206F95E7002549F0 /* ContactsListTestUITests.m */; };
+		53FB499F206F9DAF002549F0 /* Names.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB499E206F9DAF002549F0 /* Names.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		53FB495B206F95E6002549F0 /* ContactsListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FB495E206F95E6002549F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53FB495F206F95E6002549F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		53FB4961206F95E6002549F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		53FB4962206F95E6002549F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		53FB4965206F95E6002549F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53FB4967206F95E7002549F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53FB496A206F95E7002549F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		53FB497E206F95E7002549F0 /* ContactsListTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsListTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FB4982206F95E7002549F0 /* ContactsListTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsListTestUITests.m; sourceTree = "<group>"; };
 		53FB4984206F95E7002549F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53FB499D206F9DAF002549F0 /* Names.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Names.h; sourceTree = "<group>"; };
+		53FB499E206F9DAF002549F0 /* Names.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Names.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +101,13 @@
 		53FB495D206F95E6002549F0 /* ContactsListTest */ = {
 			isa = PBXGroup;
 			children = (
-				53FB495E206F95E6002549F0 /* AppDelegate.h */,
-				53FB495F206F95E6002549F0 /* AppDelegate.m */,
-				53FB4961206F95E6002549F0 /* ViewController.h */,
-				53FB4962206F95E6002549F0 /* ViewController.m */,
-				53FB4964206F95E6002549F0 /* Main.storyboard */,
-				53FB4967206F95E7002549F0 /* Assets.xcassets */,
-				53FB4969206F95E7002549F0 /* LaunchScreen.storyboard */,
-				53FB496C206F95E7002549F0 /* Info.plist */,
-				53FB496D206F95E7002549F0 /* main.m */,
+				53FB4990206F979D002549F0 /* ApplicationLayer */,
+				53FB4992206F97DC002549F0 /* PresentationLayer */,
+				53FB4993206F983D002549F0 /* BusinessLogicLayer */,
+				53FB4994206F9853002549F0 /* CoreLayer */,
+				53FB4995206F9859002549F0 /* Models */,
+				53FB4999206F993A002549F0 /* Constants */,
+				53FB4996206F9875002549F0 /* Resources */,
 			);
 			path = ContactsListTest;
 			sourceTree = "<group>";
@@ -130,6 +128,88 @@
 				53FB4984206F95E7002549F0 /* Info.plist */,
 			);
 			path = ContactsListTestUITests;
+			sourceTree = "<group>";
+		};
+		53FB4990206F979D002549F0 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				53FB496D206F95E7002549F0 /* main.m */,
+				53FB4991206F97AC002549F0 /* AppDelegates */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		53FB4991206F97AC002549F0 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				53FB495E206F95E6002549F0 /* AppDelegate.h */,
+				53FB495F206F95E6002549F0 /* AppDelegate.m */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		53FB4992206F97DC002549F0 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				53FB4969206F95E7002549F0 /* LaunchScreen.storyboard */,
+				53FB4964206F95E6002549F0 /* Main.storyboard */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		53FB4993206F983D002549F0 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		53FB4994206F9853002549F0 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		53FB4995206F9859002549F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53FB499D206F9DAF002549F0 /* Names.h */,
+				53FB499E206F9DAF002549F0 /* Names.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53FB4996206F9875002549F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53FB4998206F989A002549F0 /* Images */,
+				53FB4997206F9878002549F0 /* Plists */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53FB4997206F9878002549F0 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				53FB496C206F95E7002549F0 /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		53FB4998206F989A002549F0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				53FB4967206F95E7002549F0 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		53FB4999206F993A002549F0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53FB4963206F95E6002549F0 /* ViewController.m in Sources */,
+				53FB499F206F9DAF002549F0 /* Names.m in Sources */,
 				53FB496E206F95E7002549F0 /* main.m in Sources */,
 				53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */,
 			);
@@ -435,14 +515,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62EURDPN8F;
-				INFOPLIST_FILE = ContactsListTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContactsListTest/Resources/Plists/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Vladimir-Gordienko.ContactsListTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,14 +533,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62EURDPN8F;
-				INFOPLIST_FILE = ContactsListTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContactsListTest/Resources/Plists/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Vladimir-Gordienko.ContactsListTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
