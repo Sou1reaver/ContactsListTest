@@ -48,6 +48,8 @@ typedef void (^ObtainContactCompletionHandler) (Contact* contacts);
                       for (NSString* uid in uids) {
                           [contacts addObject:[weakSelf obtainContactWithId:uid]];
                       }
+                      
+                      // back in main thread
                       dispatch_async(dispatch_get_main_queue(), ^{
                           completionHandler(contacts);
                       });

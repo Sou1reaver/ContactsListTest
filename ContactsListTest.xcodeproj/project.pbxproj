@@ -173,8 +173,7 @@
 		53FB4993206F983D002549F0 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
-				53FB49A0206FBAF9002549F0 /* ContactsService.h */,
-				53FB49A1206FBAF9002549F0 /* ContactsService.m */,
+				53FB49B0206FE2B5002549F0 /* ContactsService */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -182,8 +181,7 @@
 		53FB4994206F9853002549F0 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
-				53FB49A6206FC59C002549F0 /* ContactUidsFactory.h */,
-				53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */,
+				53FB49B1206FE2C7002549F0 /* ContactUidsFactory */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -191,10 +189,8 @@
 		53FB4995206F9859002549F0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				53FB499D206F9DAF002549F0 /* Names.h */,
-				53FB499E206F9DAF002549F0 /* Names.m */,
-				53FB49A3206FBBD2002549F0 /* Contact.h */,
-				53FB49A4206FBBD2002549F0 /* Contact.m */,
+				53FB49B4206FE2E7002549F0 /* Contact */,
+				53FB49B2206FE2CF002549F0 /* Names */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +242,42 @@
 				53FB49AD206FDD49002549F0 /* NSData+Extensions.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		53FB49B0206FE2B5002549F0 /* ContactsService */ = {
+			isa = PBXGroup;
+			children = (
+				53FB49A0206FBAF9002549F0 /* ContactsService.h */,
+				53FB49A1206FBAF9002549F0 /* ContactsService.m */,
+			);
+			path = ContactsService;
+			sourceTree = "<group>";
+		};
+		53FB49B1206FE2C7002549F0 /* ContactUidsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				53FB49A6206FC59C002549F0 /* ContactUidsFactory.h */,
+				53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */,
+			);
+			path = ContactUidsFactory;
+			sourceTree = "<group>";
+		};
+		53FB49B2206FE2CF002549F0 /* Names */ = {
+			isa = PBXGroup;
+			children = (
+				53FB499D206F9DAF002549F0 /* Names.h */,
+				53FB499E206F9DAF002549F0 /* Names.m */,
+			);
+			path = Names;
+			sourceTree = "<group>";
+		};
+		53FB49B4206FE2E7002549F0 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				53FB49A3206FBBD2002549F0 /* Contact.h */,
+				53FB49A4206FBBD2002549F0 /* Contact.m */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
