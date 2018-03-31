@@ -18,6 +18,7 @@
 		53FB49A2206FBAF9002549F0 /* ContactsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49A1206FBAF9002549F0 /* ContactsService.m */; };
 		53FB49A5206FBBD2002549F0 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49A4206FBBD2002549F0 /* Contact.m */; };
 		53FB49A8206FC59C002549F0 /* ContactUidsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */; };
+		53FB49AE206FDD49002549F0 /* NSData+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49AD206FDD49002549F0 /* NSData+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		53FB49A4206FBBD2002549F0 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		53FB49A6206FC59C002549F0 /* ContactUidsFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactUidsFactory.h; sourceTree = "<group>"; };
 		53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactUidsFactory.m; sourceTree = "<group>"; };
+		53FB49AC206FDD49002549F0 /* NSData+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Extensions.h"; sourceTree = "<group>"; };
+		53FB49AD206FDD49002549F0 /* NSData+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				53FB4995206F9859002549F0 /* Models */,
 				53FB4999206F993A002549F0 /* Constants */,
 				53FB4996206F9875002549F0 /* Resources */,
+				53FB49AF206FDE0C002549F0 /* Extensions */,
 			);
 			path = ContactsListTest;
 			sourceTree = "<group>";
@@ -142,7 +146,7 @@
 		53FB4990206F979D002549F0 /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				53FB496D206F95E7002549F0 /* main.m */,
+				53FB49A9206FC8C0002549F0 /* Supporting Files */,
 				53FB4991206F97AC002549F0 /* AppDelegates */,
 			);
 			path = ApplicationLayer;
@@ -225,6 +229,23 @@
 			children = (
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		53FB49A9206FC8C0002549F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53FB496D206F95E7002549F0 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53FB49AF206FDE0C002549F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53FB49AC206FDD49002549F0 /* NSData+Extensions.h */,
+				53FB49AD206FDD49002549F0 /* NSData+Extensions.m */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +384,7 @@
 				53FB496E206F95E7002549F0 /* main.m in Sources */,
 				53FB49A8206FC59C002549F0 /* ContactUidsFactory.m in Sources */,
 				53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */,
+				53FB49AE206FDD49002549F0 /* NSData+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

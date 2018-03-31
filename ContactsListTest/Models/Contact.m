@@ -9,5 +9,10 @@
 #import "Contact.h"
 
 @implementation Contact
-
++ (Contact*) contactWithUid: (NSString*) uid name: (NSString*) name {
+    Contact* contact = [[Contact alloc] init];
+    contact.uid = uid;
+    contact.name = name;
+    return contact;
+}
 @end

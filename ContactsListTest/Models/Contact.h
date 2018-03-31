@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface Contact : NSObject
+
 @property (strong, nonatomic) NSString  *uid;
 @property (strong, nonatomic) NSString  *name;
-@property (strong, nonatomic) NSData  *icon;
+@property (strong, nonatomic, nullable) NSData  *icon;
+
++ (Contact*) contactWithUid: (NSString*) uid name: (NSString*) name;
+
 @end
