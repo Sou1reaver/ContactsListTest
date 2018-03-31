@@ -19,6 +19,7 @@
 		53FB49A5206FBBD2002549F0 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49A4206FBBD2002549F0 /* Contact.m */; };
 		53FB49A8206FC59C002549F0 /* ContactUidsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */; };
 		53FB49AE206FDD49002549F0 /* NSData+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49AD206FDD49002549F0 /* NSData+Extensions.m */; };
+		53FB49B7206FE3AD002549F0 /* FakeContactsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB49B6206FE3AD002549F0 /* FakeContactsDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		53FB49A7206FC59C002549F0 /* ContactUidsFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactUidsFactory.m; sourceTree = "<group>"; };
 		53FB49AC206FDD49002549F0 /* NSData+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Extensions.h"; sourceTree = "<group>"; };
 		53FB49AD206FDD49002549F0 /* NSData+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extensions.m"; sourceTree = "<group>"; };
+		53FB49B5206FE3AD002549F0 /* FakeContactsDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeContactsDatabase.h; sourceTree = "<group>"; };
+		53FB49B6206FE3AD002549F0 /* FakeContactsDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeContactsDatabase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,7 @@
 		53FB4994206F9853002549F0 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				53FB49B8206FE5F9002549F0 /* FakeContactsDatabase */,
 				53FB49B1206FE2C7002549F0 /* ContactUidsFactory */,
 			);
 			path = CoreLayer;
@@ -278,6 +282,15 @@
 				53FB49A4206FBBD2002549F0 /* Contact.m */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		53FB49B8206FE5F9002549F0 /* FakeContactsDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				53FB49B5206FE3AD002549F0 /* FakeContactsDatabase.h */,
+				53FB49B6206FE3AD002549F0 /* FakeContactsDatabase.m */,
+			);
+			path = FakeContactsDatabase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +427,7 @@
 				53FB499F206F9DAF002549F0 /* Names.m in Sources */,
 				53FB49A5206FBBD2002549F0 /* Contact.m in Sources */,
 				53FB496E206F95E7002549F0 /* main.m in Sources */,
+				53FB49B7206FE3AD002549F0 /* FakeContactsDatabase.m in Sources */,
 				53FB49A8206FC59C002549F0 /* ContactUidsFactory.m in Sources */,
 				53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */,
 				53FB49AE206FDD49002549F0 /* NSData+Extensions.m in Sources */,
