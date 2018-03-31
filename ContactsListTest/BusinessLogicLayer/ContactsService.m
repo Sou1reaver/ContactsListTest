@@ -10,7 +10,20 @@
 
 @implementation ContactsService
 
-- (void) obtainContactsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count completionHandler: (ObtainContactsCompletionHandler) completionHandler; {
+typedef void (^ObtainContactIdsCompletionHandler) (NSArray<NSString*> *uids);
+typedef void (^ObtainContactCompletionHandler) (Contact* contacts);
+
+# pragma mark - input methods
+- (void) obtainContactsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count completionHandler: (ObtainContactsCompletionHandler) completionHandler {
+    
+}
+
+# pragma mark - private methods
+- (void) obtainContactIdsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count completionHandler: (ObtainContactsCompletionHandler) completionHandler {
+    
+}
+
+- (void) obtainContactWithId: (NSString*) uid completionHandler: (ObtainContactCompletionHandler) completionHandler {
     
 }
 
