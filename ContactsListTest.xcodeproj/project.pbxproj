@@ -144,9 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				53BA85B62070CD3800BBA5AF /* Assembly */,
-				53BA85B92070CD3800BBA5AF /* View */,
 				53BA85BE2070CD3800BBA5AF /* Interactor */,
 				53BA85C32070CD3800BBA5AF /* Presenter */,
+				53BA85B92070CD3800BBA5AF /* View */,
 			);
 			path = ContactsList;
 			sourceTree = "<group>";
