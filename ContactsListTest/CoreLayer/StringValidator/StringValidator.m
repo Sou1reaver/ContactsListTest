@@ -10,7 +10,7 @@
 
 @implementation StringValidator
 
-- (BOOL) isLatinCharactersOnlyInString: (nullable NSString *) string {
+- (BOOL) isLatinLowercaseCharactersOnlyInString: (nullable NSString *) string {
     if (!string) {
         return NO;
     }

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface StringValidator : NSObject
-- (BOOL) isLatinCharactersOnlyInString: (nullable NSString *) string;
+- (BOOL) isLatinLowercaseCharactersOnlyInString: (nullable NSString *) string;
 @end
