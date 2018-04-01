@@ -21,15 +21,6 @@
 
 NSString *const contactListTableViewCellId = @"ContactListTableViewCell";
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _cellConfgurator = [[ContactListCellConfgurator alloc] init];
-    }
-    return self;
-}
-
 #pragma mark - Life Circle
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -68,6 +59,7 @@ NSString *const contactListTableViewCellId = @"ContactListTableViewCell";
 
 #pragma mark - ContactsListViewInput
 - (void)setupInitialState {
+     _cellConfgurator = [[ContactListCellConfgurator alloc] init];
     [self registrationTableViewCells];
 }
 

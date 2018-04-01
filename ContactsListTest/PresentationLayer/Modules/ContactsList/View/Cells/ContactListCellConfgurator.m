@@ -19,7 +19,7 @@
     } else {
         cell.iconImageView.image = nil;
         if (contact.name.length > 1) {
-            cell.imageLabel.text = [contact.name substringWithRange:NSMakeRange(0, 2)];
+            cell.imageLabel.text = [[contact.name substringWithRange:NSMakeRange(0, 2)] uppercaseString];
         } else {
             cell.imageLabel.text = @"";
         }
