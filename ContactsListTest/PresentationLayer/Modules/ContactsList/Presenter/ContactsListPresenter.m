@@ -13,6 +13,8 @@
 
 @implementation ContactsListPresenter
 
+NSInteger const contactsBatchSize = 50;
+
 #pragma mark - Методы ContactsListModuleInput
 - (void)configureModule {
 
@@ -21,11 +23,12 @@
 #pragma mark - Методы ContactsListViewOutput
 - (void)viewDidLoad {
 	[self.view setupInitialState];
+    [self.interactor obtainContactsWithOffset: 0 contactsCount: contactsBatchSize];
 }
 
 #pragma mark - Методы ContactsListInteractorOutput
 - (void)contactsDidObtain:(NSArray<Contact *> *)contacts {
-    
+    [self.view showContacts:contacts];
 }
 
 @end
