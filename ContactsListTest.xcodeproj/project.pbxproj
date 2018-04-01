@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53BA85C92070CD3800BBA5AF /* ContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85BA2070CD3800BBA5AF /* ContactsListViewController.m */; };
+		53BA85CA2070CD3800BBA5AF /* ContactsListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85BF2070CD3800BBA5AF /* ContactsListInteractor.m */; };
+		53BA85CB2070CD3800BBA5AF /* ContactsListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85C52070CD3800BBA5AF /* ContactsListPresenter.m */; };
+		53BA85CE2070CF2800BBA5AF /* ContactsListAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85CD2070CF2800BBA5AF /* ContactsListAssembly.m */; };
 		53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB495F206F95E6002549F0 /* AppDelegate.m */; };
 		53FB4966206F95E6002549F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4964206F95E6002549F0 /* Main.storyboard */; };
 		53FB4968206F95E7002549F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4967206F95E7002549F0 /* Assets.xcassets */; };
@@ -40,6 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53BA85BA2070CD3800BBA5AF /* ContactsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsListViewController.m; sourceTree = "<group>"; };
+		53BA85BB2070CD3800BBA5AF /* ContactsListViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListViewInput.h; sourceTree = "<group>"; };
+		53BA85BC2070CD3800BBA5AF /* ContactsListViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListViewOutput.h; sourceTree = "<group>"; };
+		53BA85BD2070CD3800BBA5AF /* ContactsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListViewController.h; sourceTree = "<group>"; };
+		53BA85BF2070CD3800BBA5AF /* ContactsListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsListInteractor.m; sourceTree = "<group>"; };
+		53BA85C02070CD3800BBA5AF /* ContactsListInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListInteractorInput.h; sourceTree = "<group>"; };
+		53BA85C12070CD3800BBA5AF /* ContactsListInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListInteractorOutput.h; sourceTree = "<group>"; };
+		53BA85C22070CD3800BBA5AF /* ContactsListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListInteractor.h; sourceTree = "<group>"; };
+		53BA85C42070CD3800BBA5AF /* ContactsListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListPresenter.h; sourceTree = "<group>"; };
+		53BA85C52070CD3800BBA5AF /* ContactsListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsListPresenter.m; sourceTree = "<group>"; };
+		53BA85C62070CD3800BBA5AF /* ContactsListModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListModuleInput.h; sourceTree = "<group>"; };
+		53BA85CC2070CF2800BBA5AF /* ContactsListAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsListAssembly.h; sourceTree = "<group>"; };
+		53BA85CD2070CF2800BBA5AF /* ContactsListAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsListAssembly.m; sourceTree = "<group>"; };
 		53FB495B206F95E6002549F0 /* ContactsListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FB495E206F95E6002549F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53FB495F206F95E6002549F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +110,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53BA85AA2070CB3300BBA5AF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85B12070CD3800BBA5AF /* ContactsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		53BA85B12070CD3800BBA5AF /* ContactsList */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85B62070CD3800BBA5AF /* Assembly */,
+				53BA85B92070CD3800BBA5AF /* View */,
+				53BA85BE2070CD3800BBA5AF /* Interactor */,
+				53BA85C32070CD3800BBA5AF /* Presenter */,
+			);
+			path = ContactsList;
+			sourceTree = "<group>";
+		};
+		53BA85B62070CD3800BBA5AF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85CC2070CF2800BBA5AF /* ContactsListAssembly.h */,
+				53BA85CD2070CF2800BBA5AF /* ContactsListAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		53BA85B92070CD3800BBA5AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85BD2070CD3800BBA5AF /* ContactsListViewController.h */,
+				53BA85BA2070CD3800BBA5AF /* ContactsListViewController.m */,
+				53BA85BB2070CD3800BBA5AF /* ContactsListViewInput.h */,
+				53BA85BC2070CD3800BBA5AF /* ContactsListViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53BA85BE2070CD3800BBA5AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85C22070CD3800BBA5AF /* ContactsListInteractor.h */,
+				53BA85BF2070CD3800BBA5AF /* ContactsListInteractor.m */,
+				53BA85C02070CD3800BBA5AF /* ContactsListInteractorInput.h */,
+				53BA85C12070CD3800BBA5AF /* ContactsListInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		53BA85C32070CD3800BBA5AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85C42070CD3800BBA5AF /* ContactsListPresenter.h */,
+				53BA85C52070CD3800BBA5AF /* ContactsListPresenter.m */,
+				53BA85C62070CD3800BBA5AF /* ContactsListModuleInput.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		53FB4952206F95E6002549F0 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +244,7 @@
 		53FB4992206F97DC002549F0 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				53BA85AA2070CB3300BBA5AF /* Modules */,
 				53FB4969206F95E7002549F0 /* LaunchScreen.storyboard */,
 				53FB4964206F95E6002549F0 /* Main.storyboard */,
 			);
@@ -423,11 +501,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BA85C92070CD3800BBA5AF /* ContactsListViewController.m in Sources */,
 				53FB49A2206FBAF9002549F0 /* ContactsService.m in Sources */,
+				53BA85CB2070CD3800BBA5AF /* ContactsListPresenter.m in Sources */,
 				53FB499F206F9DAF002549F0 /* Names.m in Sources */,
+				53BA85CA2070CD3800BBA5AF /* ContactsListInteractor.m in Sources */,
 				53FB49A5206FBBD2002549F0 /* Contact.m in Sources */,
 				53FB496E206F95E7002549F0 /* main.m in Sources */,
 				53FB49B7206FE3AD002549F0 /* FakeContactsDatabase.m in Sources */,
+				53BA85CE2070CF2800BBA5AF /* ContactsListAssembly.m in Sources */,
 				53FB49A8206FC59C002549F0 /* ContactUidsFactory.m in Sources */,
 				53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */,
 				53FB49AE206FDD49002549F0 /* NSData+Extensions.m in Sources */,
