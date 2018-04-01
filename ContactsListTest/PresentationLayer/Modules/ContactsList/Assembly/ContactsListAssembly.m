@@ -7,7 +7,6 @@
 //
 
 #import "ContactsListAssembly.h"
-#import "ContactsListViewController.h"
 #import "ContactsListPresenter.h"
 #import "ContactsListInteractor.h"
 #import "ContactsService.h"

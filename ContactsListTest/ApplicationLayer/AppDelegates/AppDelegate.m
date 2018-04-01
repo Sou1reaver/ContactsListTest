@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ApplicationConfigurator.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ApplicationConfigurator *applicationConfigurator = [[ApplicationConfigurator alloc] initWithWindow: self.window];
+    [applicationConfigurator initialConfigure];
     return YES;
 }
 

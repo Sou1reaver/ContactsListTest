@@ -1,5 +1,5 @@
 //
-//  ContactsListAssembly.h
+//  ApplicationConfigurator.h
 //  ContactsListTest
 //
 //  Created by Владимир Гордиенко on 01.04.2018.
@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ContactsListViewController.h"
+@import UIKit;
 
-@interface ContactsListAssembly : NSObject
-- (ContactsListViewController *) assembleModule;
+@interface ApplicationConfigurator : NSObject
+- (instancetype)initWithWindow:(UIWindow *)window;
+- (void) initialConfigure;
 @end
