@@ -18,6 +18,7 @@
 		53BA85E72070EC5700BBA5AF /* StoryboardNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85E62070EC5700BBA5AF /* StoryboardNames.m */; };
 		53BA85ED2070F54700BBA5AF /* ContactsListLaunchRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85EC2070F54700BBA5AF /* ContactsListLaunchRouter.m */; };
 		53BA85F12070F84400BBA5AF /* ApplicationConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85F02070F84400BBA5AF /* ApplicationConfigurator.m */; };
+		53BA85F52070FFBC00BBA5AF /* StringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85F42070FFBC00BBA5AF /* StringValidator.m */; };
 		53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB495F206F95E6002549F0 /* AppDelegate.m */; };
 		53FB4966206F95E6002549F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4964206F95E6002549F0 /* Main.storyboard */; };
 		53FB4968206F95E7002549F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4967206F95E7002549F0 /* Assets.xcassets */; };
@@ -76,6 +77,8 @@
 		53BA85EC2070F54700BBA5AF /* ContactsListLaunchRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsListLaunchRouter.m; sourceTree = "<group>"; };
 		53BA85EF2070F84400BBA5AF /* ApplicationConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationConfigurator.h; sourceTree = "<group>"; };
 		53BA85F02070F84400BBA5AF /* ApplicationConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationConfigurator.m; sourceTree = "<group>"; };
+		53BA85F32070FFBC00BBA5AF /* StringValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringValidator.h; sourceTree = "<group>"; };
+		53BA85F42070FFBC00BBA5AF /* StringValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringValidator.m; sourceTree = "<group>"; };
 		53FB495B206F95E6002549F0 /* ContactsListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FB495E206F95E6002549F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53FB495F206F95E6002549F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -260,6 +263,15 @@
 			path = ApplicationConfigurator;
 			sourceTree = "<group>";
 		};
+		53BA85F22070FF9300BBA5AF /* StringValidator */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85F32070FFBC00BBA5AF /* StringValidator.h */,
+				53BA85F42070FFBC00BBA5AF /* StringValidator.m */,
+			);
+			path = StringValidator;
+			sourceTree = "<group>";
+		};
 		53FB4952206F95E6002549F0 = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +367,7 @@
 		53FB4994206F9853002549F0 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				53BA85F22070FF9300BBA5AF /* StringValidator */,
 				53FB49B8206FE5F9002549F0 /* FakeContactsDatabase */,
 				53FB49B1206FE2C7002549F0 /* ContactUidsFactory */,
 			);
@@ -599,6 +612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BA85D62070D27900BBA5AF /* ContactListTableViewCell.m in Sources */,
+				53BA85F52070FFBC00BBA5AF /* StringValidator.m in Sources */,
 				53BA85C92070CD3800BBA5AF /* ContactsListViewController.m in Sources */,
 				53FB49A2206FBAF9002549F0 /* ContactsService.m in Sources */,
 				53BA85F12070F84400BBA5AF /* ApplicationConfigurator.m in Sources */,
