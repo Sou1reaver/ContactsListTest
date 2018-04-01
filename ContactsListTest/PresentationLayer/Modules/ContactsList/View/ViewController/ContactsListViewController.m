@@ -54,6 +54,7 @@ NSString *const contactListTableViewCellId = @"ContactListTableViewCell";
 
 #pragma mark - ContactsListViewInput
 - (void)setupInitialState {
+    self.title = @"Contacts";
      _cellConfgurator = [[ContactListCellConfgurator alloc] init];
     [self registrationTableViewCells];
 }
