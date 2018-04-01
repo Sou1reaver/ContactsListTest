@@ -12,7 +12,7 @@
 
 - (NSArray<NSString*> *) generateUidsWithCount: (NSInteger) count {
     NSMutableArray<NSString*> * array = [[NSMutableArray alloc] init];
-    for (int i = 1; i<count; i+=1) {
+    for (int i = 1; i<=count; i+=1) {
         [array addObject: [NSString stringWithFormat: @"%d", i]];
     }
     return (NSArray*) array;

@@ -11,6 +11,10 @@
 #import "ContactsListViewInput.h"
 #import "ContactsListInteractorInput.h"
 
+@interface ContactsListPresenter ()
+@property (assign, nonatomic) BOOL isLoadingContacts;
+@end
+
 @implementation ContactsListPresenter
 
 NSInteger const contactsBatchSize = 50;
@@ -27,13 +31,18 @@ NSInteger const contactsBatchSize = 50;
 }
 
 - (void)allContactsDidShowWithContactsCount: (NSInteger) contactsCount {
-    [self.interactor obtainContactsWithOffset: contactsCount-1 contactsCount: contactsBatchSize];
+    if (self.isLoadingContacts) {
+        return;
+    }
+    [self.interactor obtainContactsWithOffset: contactsCount contactsCount: contactsBatchSize];
+    self.isLoadingContacts = true;
 }
 
 
 #pragma mark - Методы ContactsListInteractorOutput
 - (void)contactsDidObtain:(NSArray<Contact *> *)contacts {
     [self.view showContacts:contacts];
+    self.isLoadingContacts = false;
 }
 
 @end

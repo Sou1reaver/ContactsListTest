@@ -26,7 +26,7 @@ NSString *const defaultContactName = @"noname";
 }
 
 - (void) configureCell:(ContactListTableViewCell *) cell withContact: (Contact *) contact; {
-    NSString *name = @"";
+    NSString *name;
     if (![self.stringValidator isLatinLowercaseCharactersOnlyInString:contact.name] || contact.name.length < 2) {
         name = defaultContactName;
     } else {

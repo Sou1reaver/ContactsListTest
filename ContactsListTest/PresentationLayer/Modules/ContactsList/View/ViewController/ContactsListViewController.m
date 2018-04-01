@@ -84,7 +84,7 @@ NSString *const contactListTableViewCellId = @"ContactListTableViewCell";
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == (self.contacts.count-1)) {
+    if (indexPath.row > (self.contacts.count-1)/2) {
         [self.output allContactsDidShowWithContactsCount: self.contacts.count];
     }
 }
