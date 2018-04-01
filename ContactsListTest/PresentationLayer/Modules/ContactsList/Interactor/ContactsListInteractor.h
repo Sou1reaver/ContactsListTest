@@ -7,11 +7,13 @@
 //
 
 #import "ContactsListInteractorInput.h"
+#import "ContactsService.h"
 
 @protocol ContactsListInteractorOutput;
 
 @interface ContactsListInteractor : NSObject <ContactsListInteractorInput>
 
+@property (nonatomic, strong) ContactsService *contactsService;
 @property (nonatomic, weak) id<ContactsListInteractorOutput> output;
 
 @end

@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Contact.h"
 
 @protocol ContactsListViewInput <NSObject>
 
 - (void)setupInitialState;
+- (void)showContacts: (NSArray<Contact *> *) contacts;
 
 @end

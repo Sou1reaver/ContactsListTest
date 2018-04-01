@@ -14,6 +14,7 @@
 		53BA85D02070D05200BBA5AF /* ContactsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53BA85CF2070D05200BBA5AF /* ContactsList.storyboard */; };
 		53BA85D62070D27900BBA5AF /* ContactListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85D52070D27900BBA5AF /* ContactListTableViewCell.m */; };
 		53BA85D82070D29200BBA5AF /* ContactListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53BA85D72070D29200BBA5AF /* ContactListTableViewCell.xib */; };
+		53BA85DC2070E1AB00BBA5AF /* ContactListCellConfgurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85DB2070E1AB00BBA5AF /* ContactListCellConfgurator.m */; };
 		53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB495F206F95E6002549F0 /* AppDelegate.m */; };
 		53FB4966206F95E6002549F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4964206F95E6002549F0 /* Main.storyboard */; };
 		53FB4968206F95E7002549F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4967206F95E7002549F0 /* Assets.xcassets */; };
@@ -64,6 +65,8 @@
 		53BA85D42070D27900BBA5AF /* ContactListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactListTableViewCell.h; sourceTree = "<group>"; };
 		53BA85D52070D27900BBA5AF /* ContactListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactListTableViewCell.m; sourceTree = "<group>"; };
 		53BA85D72070D29200BBA5AF /* ContactListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListTableViewCell.xib; sourceTree = "<group>"; };
+		53BA85DA2070E1AB00BBA5AF /* ContactListCellConfgurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactListCellConfgurator.h; sourceTree = "<group>"; };
+		53BA85DB2070E1AB00BBA5AF /* ContactListCellConfgurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactListCellConfgurator.m; sourceTree = "<group>"; };
 		53FB495B206F95E6002549F0 /* ContactsListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FB495E206F95E6002549F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53FB495F206F95E6002549F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 		53BA85D32070D07600BBA5AF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				53BA85DA2070E1AB00BBA5AF /* ContactListCellConfgurator.h */,
+				53BA85DB2070E1AB00BBA5AF /* ContactListCellConfgurator.m */,
 				53BA85D42070D27900BBA5AF /* ContactListTableViewCell.h */,
 				53BA85D52070D27900BBA5AF /* ContactListTableViewCell.m */,
 				53BA85D72070D29200BBA5AF /* ContactListTableViewCell.xib */,
@@ -549,6 +554,7 @@
 				53FB49B7206FE3AD002549F0 /* FakeContactsDatabase.m in Sources */,
 				53BA85CE2070CF2800BBA5AF /* ContactsListAssembly.m in Sources */,
 				53FB49A8206FC59C002549F0 /* ContactUidsFactory.m in Sources */,
+				53BA85DC2070E1AB00BBA5AF /* ContactListCellConfgurator.m in Sources */,
 				53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */,
 				53FB49AE206FDD49002549F0 /* NSData+Extensions.m in Sources */,
 			);

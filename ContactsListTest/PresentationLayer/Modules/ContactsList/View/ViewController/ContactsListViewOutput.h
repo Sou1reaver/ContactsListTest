@@ -10,6 +10,6 @@
 
 @protocol ContactsListViewOutput <NSObject>
 
-- (void)didTriggerViewReadyEvent;
+- (void)viewDidLoad;
 
 @end

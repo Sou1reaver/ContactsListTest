@@ -13,5 +13,16 @@
 @implementation ContactsListInteractor
 
 #pragma mark - ContactsListInteractorInput
+- (void) obtainContactsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count {
+    if (!self.contactsService) {
+        NSAssert(NO, @"ContactsListInteractor: - contactsService is nil");
+    }
+    __weak typeof (self) weakSelf = self;
+    [self.contactsService obtainContactsWithOffset: offset
+                                     contactsCount: count
+                                 completionHandler:^(NSArray<Contact *> *contacts) {
+                                     [weakSelf.output contactsDidObtain:contacts];
+                                 }];
+}
 
 @end

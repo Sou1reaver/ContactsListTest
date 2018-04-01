@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol ContactsListInteractorInput <NSObject>
-
+- (void) obtainContactsWithOffset: (NSInteger) offset contactsCount: (NSInteger) count;
 @end

@@ -14,17 +14,18 @@
 @implementation ContactsListPresenter
 
 #pragma mark - Методы ContactsListModuleInput
-
 - (void)configureModule {
 
 }
 
 #pragma mark - Методы ContactsListViewOutput
-
-- (void)didTriggerViewReadyEvent {
+- (void)viewDidLoad {
 	[self.view setupInitialState];
 }
 
 #pragma mark - Методы ContactsListInteractorOutput
+- (void)contactsDidObtain:(NSArray<Contact *> *)contacts {
+    
+}
 
 @end

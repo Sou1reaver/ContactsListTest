@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Contact.h"
 
 @protocol ContactsListInteractorOutput <NSObject>
-
+- (void) contactsDidObtain: (NSArray<Contact*> *) contacts;
 @end
