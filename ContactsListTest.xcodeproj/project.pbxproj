@@ -222,13 +222,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		53BA85DD2070EAA100BBA5AF /* Assemblies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assemblies;
-			sourceTree = "<group>";
-		};
 		53BA85E82070F4ED00BBA5AF /* LaunchSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,7 +341,6 @@
 		53FB4992206F97DC002549F0 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				53BA85DD2070EAA100BBA5AF /* Assemblies */,
 				53BA85AA2070CB3300BBA5AF /* Modules */,
 				53FB4969206F95E7002549F0 /* LaunchScreen.storyboard */,
 				53FB4964206F95E6002549F0 /* Main.storyboard */,
