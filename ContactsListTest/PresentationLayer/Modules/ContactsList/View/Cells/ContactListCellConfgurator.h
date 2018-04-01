@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ContactListTableViewCell.h"
 #import "Contact.h"
-@import UIKit
+@import UIKit;
 
 @interface ContactListCellConfgurator : NSObject
 - (void) configureCell:(ContactListTableViewCell *) cell withContact: (Contact *) contact;

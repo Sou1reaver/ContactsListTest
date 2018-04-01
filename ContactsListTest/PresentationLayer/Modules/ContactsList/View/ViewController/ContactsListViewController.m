@@ -13,7 +13,7 @@
 
 @interface ContactsListViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSArray<Contact *> *contacts;
+@property (strong, nonatomic) NSMutableArray<Contact *> *contacts;
 @property (strong, nonatomic) ContactListCellConfgurator *cellConfgurator;
 @end
 
@@ -47,6 +47,24 @@ NSString *const contactListTableViewCellId = @"ContactListTableViewCell";
     [self.tableView registerNib:contactListTableViewCellNib forCellReuseIdentifier:contactListTableViewCellId];
 }
 
+- (void) setNewContacts: (NSArray<Contact *> *)contacts {
+    self.contacts = contacts.mutableCopy;
+    [self.tableView reloadData];
+}
+
+- (void) addNewContacts: (NSArray<Contact *> *)contacts {
+    [self.contacts addObjectsFromArray: contacts];
+    NSMutableArray *indexPathArray = [[NSMutableArray alloc] init];
+    NSInteger startIndex = self.contacts.count-contacts.count+1;
+    NSInteger endIndex = self.contacts.count;
+    
+    for (NSInteger i = startIndex; i < endIndex; i+=1) {
+        [indexPathArray addObject:[NSIndexPath indexPathForRow: i inSection:0]];
+    }
+    [self.tableView beginUpdates];
+    [self.tableView insertRowsAtIndexPaths: indexPathArray withRowAnimation: UITableViewRowAnimationAutomatic];
+}
+
 
 #pragma mark - ContactsListViewInput
 - (void)setupInitialState {
@@ -54,7 +72,14 @@ NSString *const contactListTableViewCellId = @"ContactListTableViewCell";
 }
 
 - (void)showContacts:(NSArray<Contact *> *)contacts {
-    
+    if (contacts.count < 1) {
+        return;
+    }
+    if (self.contacts.count < 1) {
+        [self setNewContacts: contacts];
+    } else {
+        [self addNewContacts:contacts];
+    }
 }
 
 
