@@ -11,6 +11,9 @@
 		53BA85CA2070CD3800BBA5AF /* ContactsListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85BF2070CD3800BBA5AF /* ContactsListInteractor.m */; };
 		53BA85CB2070CD3800BBA5AF /* ContactsListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85C52070CD3800BBA5AF /* ContactsListPresenter.m */; };
 		53BA85CE2070CF2800BBA5AF /* ContactsListAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85CD2070CF2800BBA5AF /* ContactsListAssembly.m */; };
+		53BA85D02070D05200BBA5AF /* ContactsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53BA85CF2070D05200BBA5AF /* ContactsList.storyboard */; };
+		53BA85D62070D27900BBA5AF /* ContactListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BA85D52070D27900BBA5AF /* ContactListTableViewCell.m */; };
+		53BA85D82070D29200BBA5AF /* ContactListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53BA85D72070D29200BBA5AF /* ContactListTableViewCell.xib */; };
 		53FB4960206F95E6002549F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FB495F206F95E6002549F0 /* AppDelegate.m */; };
 		53FB4966206F95E6002549F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4964206F95E6002549F0 /* Main.storyboard */; };
 		53FB4968206F95E7002549F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4967206F95E7002549F0 /* Assets.xcassets */; };
@@ -57,6 +60,10 @@
 		53BA85C62070CD3800BBA5AF /* ContactsListModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListModuleInput.h; sourceTree = "<group>"; };
 		53BA85CC2070CF2800BBA5AF /* ContactsListAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsListAssembly.h; sourceTree = "<group>"; };
 		53BA85CD2070CF2800BBA5AF /* ContactsListAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsListAssembly.m; sourceTree = "<group>"; };
+		53BA85CF2070D05200BBA5AF /* ContactsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactsList.storyboard; sourceTree = "<group>"; };
+		53BA85D42070D27900BBA5AF /* ContactListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactListTableViewCell.h; sourceTree = "<group>"; };
+		53BA85D52070D27900BBA5AF /* ContactListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactListTableViewCell.m; sourceTree = "<group>"; };
+		53BA85D72070D29200BBA5AF /* ContactListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListTableViewCell.xib; sourceTree = "<group>"; };
 		53FB495B206F95E6002549F0 /* ContactsListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FB495E206F95E6002549F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53FB495F206F95E6002549F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,10 +148,9 @@
 		53BA85B92070CD3800BBA5AF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				53BA85BD2070CD3800BBA5AF /* ContactsListViewController.h */,
-				53BA85BA2070CD3800BBA5AF /* ContactsListViewController.m */,
-				53BA85BB2070CD3800BBA5AF /* ContactsListViewInput.h */,
-				53BA85BC2070CD3800BBA5AF /* ContactsListViewOutput.h */,
+				53BA85D12070D05A00BBA5AF /* ViewController */,
+				53BA85D32070D07600BBA5AF /* Cells */,
+				53BA85D22070D06A00BBA5AF /* Storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +174,35 @@
 				53BA85C62070CD3800BBA5AF /* ContactsListModuleInput.h */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		53BA85D12070D05A00BBA5AF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85BD2070CD3800BBA5AF /* ContactsListViewController.h */,
+				53BA85BA2070CD3800BBA5AF /* ContactsListViewController.m */,
+				53BA85BB2070CD3800BBA5AF /* ContactsListViewInput.h */,
+				53BA85BC2070CD3800BBA5AF /* ContactsListViewOutput.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		53BA85D22070D06A00BBA5AF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85CF2070D05200BBA5AF /* ContactsList.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		53BA85D32070D07600BBA5AF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				53BA85D42070D27900BBA5AF /* ContactListTableViewCell.h */,
+				53BA85D52070D27900BBA5AF /* ContactListTableViewCell.m */,
+				53BA85D72070D29200BBA5AF /* ContactListTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		53FB4952206F95E6002549F0 = {
@@ -474,7 +509,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BA85D82070D29200BBA5AF /* ContactListTableViewCell.xib in Resources */,
 				53FB496B206F95E7002549F0 /* LaunchScreen.storyboard in Resources */,
+				53BA85D02070D05200BBA5AF /* ContactsList.storyboard in Resources */,
 				53FB4968206F95E7002549F0 /* Assets.xcassets in Resources */,
 				53FB4966206F95E6002549F0 /* Main.storyboard in Resources */,
 			);
@@ -501,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BA85D62070D27900BBA5AF /* ContactListTableViewCell.m in Sources */,
 				53BA85C92070CD3800BBA5AF /* ContactsListViewController.m in Sources */,
 				53FB49A2206FBAF9002549F0 /* ContactsService.m in Sources */,
 				53BA85CB2070CD3800BBA5AF /* ContactsListPresenter.m in Sources */,

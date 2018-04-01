@@ -7,8 +7,11 @@
 //
 
 #import "ContactsListViewController.h"
-
 #import "ContactsListViewOutput.h"
+
+@interface ContactsListViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@end
 
 @implementation ContactsListViewController
 
@@ -23,7 +26,7 @@
 #pragma mark - ContactsListViewInput
 
 - (void)setupInitialState {
-	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+
 }
 
 @end
