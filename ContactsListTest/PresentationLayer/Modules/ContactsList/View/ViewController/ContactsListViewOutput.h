@@ -11,5 +11,6 @@
 @protocol ContactsListViewOutput <NSObject>
 
 - (void)viewDidLoad;
+- (void)allContactsDidShowWithContactsCount: (NSInteger) contactsCount;
 
 @end

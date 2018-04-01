@@ -44,16 +44,11 @@ NSString *const contactListTableViewCellId = @"ContactListTableViewCell";
 }
 
 - (void) addNewContacts: (NSArray<Contact *> *)contacts {
-    [self.contacts addObjectsFromArray: contacts];
-    NSMutableArray *indexPathArray = [[NSMutableArray alloc] init];
-    NSInteger startIndex = self.contacts.count-contacts.count+1;
-    NSInteger endIndex = self.contacts.count;
+    NSIndexSet *indexes = [NSIndexSet indexSetWithIndexesInRange:
+                          NSMakeRange(self.contacts.count-1,[contacts count])];
     
-    for (NSInteger i = startIndex; i < endIndex; i+=1) {
-        [indexPathArray addObject:[NSIndexPath indexPathForRow: i inSection:0]];
-    }
-    [self.tableView beginUpdates];
-    [self.tableView insertRowsAtIndexPaths: indexPathArray withRowAnimation: UITableViewRowAnimationAutomatic];
+    [self.contacts insertObjects:contacts atIndexes:indexes];
+    [self.tableView reloadData];
 }
 
 
@@ -84,6 +79,13 @@ NSString *const contactListTableViewCellId = @"ContactListTableViewCell";
     ContactListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: contactListTableViewCellId forIndexPath: indexPath];
     [_cellConfgurator configureCell:cell withContact: [self.contacts objectAtIndex:indexPath.row]];
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == (self.contacts.count-1)) {
+        [self.output allContactsDidShowWithContactsCount: self.contacts.count];
+    }
 }
 
 @end

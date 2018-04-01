@@ -26,6 +26,11 @@ NSInteger const contactsBatchSize = 50;
     [self.interactor obtainContactsWithOffset: 0 contactsCount: contactsBatchSize];
 }
 
+- (void)allContactsDidShowWithContactsCount: (NSInteger) contactsCount {
+    [self.interactor obtainContactsWithOffset: contactsCount-1 contactsCount: contactsBatchSize];
+}
+
+
 #pragma mark - Методы ContactsListInteractorOutput
 - (void)contactsDidObtain:(NSArray<Contact *> *)contacts {
     [self.view showContacts:contacts];

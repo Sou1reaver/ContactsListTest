@@ -56,7 +56,7 @@ NSInteger const contactUidsCount = 1000;
 
 
 - (Contact *) obtainContactWithId: (NSString *) uid {
-    NSInteger randomIndex = arc4random_uniform((uint32_t)(self.names.list.count + 1));
+    NSInteger randomIndex = arc4random_uniform((uint32_t)(self.names.list.count));
     BOOL showImage = (BOOL) arc4random_uniform(2);
     
     NSString * name = [self.names.list objectAtIndex:randomIndex];
